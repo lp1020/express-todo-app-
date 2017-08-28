@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>To Do App</title>
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+
+<% include ../partials/header.ejs %>
+  <div class='todos'>
+      <h1><%= data.title %></h1>
+      <h3><%= data.content %></h3>
+      <h3><%= data.description %></h3>
+      <h3><%= data.status %></h3>
+      <a href='/todos' class="allToDoLink">See all To-Dos</a>
+    </div>
+
+  <% include ../partials/footer.ejs %>
+</html>

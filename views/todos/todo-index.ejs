@@ -1,0 +1,28 @@
+ <!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>All To Dos</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+ <% include ../partials/header.ejs %>
+
+<a href="/todos/add" class="addToDoLink">Add a todo!</a>
+  <% for (let todos of data) { %>
+    <div class='todo'>
+      <p class="toDoTitle"><%= todos.title %></p>
+      <p class="toDoStatus"><%= todos.status %></p>
+      <p class="toDoCategory"><strong><%= todos.category %></strong></p>
+      <a href='/todos/<%= todos.id%>' class="learnMoreLink">Info</a>
+      <form action="/todos/<%= data.id %>?_method=PUT" method="post">
+      <input class="editForm" type="Submit" value="Update"/>
+  </form>
+      <form action="/todos/<%= todos.id %>?_method=Delete" method="Post">
+        <input class="deleteForm" type="Submit" value="Delete"/>
+      </form>
+    </div>
+  <% } %>
+
+<% include ../partials/footer.ejs %>
+</html>

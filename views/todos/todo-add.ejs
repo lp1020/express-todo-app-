@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Add a To-Do</title>
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+<% include ../partials/header.ejs %>
+<form method='POST' action='/todos'>
+  <input name='title' type='text' placeholder='title' />
+  <input name='category' type='text' placeholder='category' />
+  <input name='description' type='text' placeholder='description'>
+  <p>To Do</p><input name='status' type='radio' value='To do'>
+  <p>Done</p><input name='status' type='radio' value='Done'>
+  <input type='submit' value='Submit!' />
+</form>
+
+<% include ../partials/footer.ejs %>
+</html>
