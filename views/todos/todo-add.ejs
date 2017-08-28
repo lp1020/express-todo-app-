@@ -7,12 +7,12 @@
 </head>
 <% include ../partials/header.ejs %>
 <form method='POST' action='/todos'>
-  <input name='title' type='text' placeholder='title' />
-  <input name='category' type='text' placeholder='category' />
-  <input name='description' type='text' placeholder='description'>
-  <p>To Do</p><input name='status' type='radio' value='To do'>
-  <p>Done</p><input name='status' type='radio' value='Done'>
-  <input type='submit' value='Submit!' />
+  <input class= "titleInput" name='title' type='text' placeholder='title' />
+  <input class= "categoryInput" name='category' type='text' placeholder='category' />
+  <input class="descriptionInput" name='description' type='text' placeholder='description'>
+  <p class="toDoButton">To Do<input name='status' type='radio' value='To do'></p>
+  <p class="doneButton">Done<input name='status' type='radio' value='Done'></p>
+  <input class="submitButton" type='submit' value='Submit!' />
 </form>
 
 <% include ../partials/footer.ejs %>

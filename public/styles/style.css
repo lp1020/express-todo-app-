@@ -157,19 +157,70 @@ body {
 
 .allToDoLink {
   text-decoration: none;
+  float: right;
   color: salmon;
+  margin-top: 200px;
+  margin-right: 100px;
 }
 
+.titleInput {
+  height: 50px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 300px;
+}
 
+.categoryInput {
+ height: 50px;
+position: absolute;
+margin-top: 50px;
+margin-left: 600px;
+}
 
+.descriptionInput {
+  height: 100px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 450px;
+}
 
+.toDoButton {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 250px;
+}
 
+.doneButton{
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 450px;
+}
 
+.submitButton {
+  font-size: 14px;
+  height: 30px;
+  position: absolute;
+  margin-top: 305px;
+  margin-left: 650px;
+  background-color: salmon;
+  border: 4px solid black;
+}
+
+.todos {
+  width: 300px;
+  text-align: center;
+  background-color: salmon;
+  border: 4px solid black;
+  margin-top: 50px;
+  margin-left: 400px;
+  border-radius: 80px;
+}
 footer {
   width: 1045px;
   position: absolute;
   background: black;
   color: white;
   padding: 2% 3%;
-  margin-top: 200px;
+  margin-top: 400px;
+  margin-bottom: 0px;
 }

@@ -10,12 +10,12 @@
 
 <div class="todos">
   <form class="editToDo" action="/todos/<%= data.id %>?_method=PUT" method="POST">
-    <input name="title" type="text" placeholder="<%= data.title %>"/>
-    <input name="category" type="text" placeholder="<%= data.category %>" />
-    <input name="description" type="text" placeholder="<%= data.description %>"/>
-    <p>To Do</p><input name='status' type='radio' value='To do'>
-    <p>Done</p><input name='status' type='radio' value='Done'>
-    <input type="Submit" value="Update"/>
+    <input class= "titleInput" name="title" type="text" placeholder="<%= data.title %>"/>
+    <input class= "categoryInput" name="category" type="text" placeholder="<%= data.category %>" />
+    <input class= "descriptionInput" name="description" type="text" placeholder="<%= data.description %>"/>
+    <p class="toDoButton">To Do<input name='status' type='radio' value='To do'></p>
+    <p class="doneButton">Done<input name='status' type='radio' value='Done'></p>
+    <input class="submitButton" type="Submit" value="Update"/>
   </form>
 <a href='/todos' class="allToDoLink">See all To-Dos</a>
 </div>
