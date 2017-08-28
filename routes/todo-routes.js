@@ -19,9 +19,8 @@ todoRoutes.get('/add', (req, res) => {
 });
 });
 
-todoRoutes.get('/edit/:id', todosController.edit);
-
 todoRoutes.get('/:id', todosController.show);
+todoRoutes.get('/edit/:id', todosController.edit);
 todoRoutes.put('/:id', todosController.update);
 
 
