@@ -83,17 +83,3 @@ todosController.delete = (req, res) => {
 
 module.exports = todosController;
 
-
-
-// todosController.index = (req, res) => {
-//   Todo.findAll()
-//   .then(todos => {
-//     res.render('todos/todo-index', {
-//       message: 'ok',
-//       data: todos,
-//     });
-//   }).catch(err => {
-//     console.log(err);
-//     res.status(500).json(err);
-//   })
-// };
