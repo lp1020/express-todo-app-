@@ -2,25 +2,22 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>Add a To-Do</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <title>Edit a To-Do</title>
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 
-
-<% include ../partials/top.ejs %>
+<% include ../partials/header.ejs %>
 
 <div class="todos">
-  <h1><%= data.title %></h1>
-  <h3><%= data.category %></h3>
-  <h3><%= data.description %></h3>
-  <form class="">?_method=PUT" method="post">
+  <form class="editToDo" action="/todos/<%= data.id %>?_method=PUT" method="POST">
     <input name="title" type="text" placeholder="<%= data.title %>"/>
     <input name="category" type="text" placeholder="<%= data.category %>" />
     <input name="description" type="text" placeholder="<%= data.description %>"/>
+    <p>To Do</p><input name='status' type='radio' value='To do'>
+    <p>Done</p><input name='status' type='radio' value='Done'>
     <input type="Submit" value="Update"/>
   </form>
 
 </div>
-
-<% include ../partials/bottom.ejs %>
+<% include ../partials/footer.ejs %>
 </html>

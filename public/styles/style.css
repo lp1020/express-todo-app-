@@ -131,12 +131,18 @@ body {
 }
 
 .editForm {
-  height: 50px;
+  text-decoration: none;
   color: salmon;
   float: right;
   margin-right: 100px;
-  margin-top: -85px;
-  background-color: black;
+  margin-top: -80px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 80px;
+}
+
+.editForm:hover {
+  color: black;
 }
 
 .deleteForm {

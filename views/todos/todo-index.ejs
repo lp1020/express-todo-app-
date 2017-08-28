@@ -15,8 +15,7 @@
       <p class="toDoStatus"><%= todos.status %></p>
       <p class="toDoCategory"><strong><%= todos.category %></strong></p>
       <a href='/todos/<%= todos.id%>' class="learnMoreLink">Info</a>
-      <form action="/todos/edit/<%= todos.id %>?_method=PUT" method="post">
-      <input class="editForm" type="Submit" value="Update"/>
+      <a href='/todos/edit/<%= todos.id%>' class="editForm">Edit</a>
   </form>
       <form action="/todos/<%= todos.id %>?_method=Delete" method="Post">
         <input class="deleteForm" type="Submit" value="Delete"/>

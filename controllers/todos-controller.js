@@ -8,7 +8,7 @@ todosController.index = (req, res) => {
     res.render('todos/todo-index', {
       message: 'ok',
       data: todos,
-      logoName: "The BEST To Do App",
+      logoName: "The BEST To-Do App",
     });
   }).catch(err => {
     console.log(err);
@@ -22,7 +22,7 @@ todosController.show = (req, res) => {
     res.render('todos/todo-single', {
       message: 'ok',
       data: todos,
-      logoName: "The BEST To Do App",
+      logoName: "The BEST To-Do App",
     });
   }).catch(err => {
     console.log(err);
@@ -46,12 +46,13 @@ todosController.create = (req, res) => {
 
 todosController.edit = (req, res) => {
   Todo.findById(req.params.id)
-    .then((todo) => {
+    .then((todos) => {
       res.render('todos/todo-edit', {
-        data: todo,
+        data: todos,
+        logoName: "The BEST To-Do App",
       });
-    })
-    .catch((err) => {
+    }).catch((err) => {
+      console.log(err);
       res.status(400).json(err);
     });
 };
