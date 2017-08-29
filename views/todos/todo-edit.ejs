@@ -8,7 +8,7 @@
 
 <% include ../partials/header.ejs %>
 
-<div class="todos">
+
   <form class="editToDo" action="/todos/<%= data.id %>?_method=PUT" method="POST">
     <input class= "titleInput" name="title" type="text" placeholder="<%= data.title %>"/>
     <input class= "categoryInput" name="category" type="text" placeholder="<%= data.category %>" />
@@ -18,6 +18,5 @@
     <input class="submitButton" type="Submit" value="Update"/>
   </form>
 <a href='/todos' class="allToDoLink">See all To-Dos</a>
-</div>
 <% include ../partials/footer.ejs %>
 </html>

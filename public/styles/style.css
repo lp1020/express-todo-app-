@@ -187,13 +187,13 @@ margin-left: 600px;
 .toDoButton {
   position: absolute;
   margin-top: 300px;
-  margin-left: 250px;
+  margin-left: 350px;
 }
 
 .doneButton{
   position: absolute;
   margin-top: 300px;
-  margin-left: 450px;
+  margin-left: 500px;
 }
 
 .submitButton {
@@ -215,6 +215,7 @@ margin-left: 600px;
   margin-left: 400px;
   border-radius: 80px;
 }
+
 footer {
   width: 1045px;
   position: absolute;
